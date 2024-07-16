@@ -1,0 +1,29 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chl-a Concentration Map</title>
+</head>
+<body>
+    <h1>Chl-a Concentration Map</h1>
+    <img src="{{ map_image }}" alt="Chl-a Concentration Map">
+    <a href="/download">Download Map</a>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body>
+    <h1>Chl-a Concentration Map</h1>
+    <img src="{{ url_for('static', filename=chla_map_image) }}" alt="Chl-a Map">
+    <a href="/download?file=chla_map.png">Download Chl-a Map</a>
+    
+    <h1>TSS Concentration Map</h1>
+    <img src="{{ url_for('static', filename=tss_map_image) }}" alt="TSS Map">
+    <a href="/download?file=tss_map.png">Download TSS Map</a>
+</body>
+</html>
